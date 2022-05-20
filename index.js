@@ -130,6 +130,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("running cShutter server");
 });
+app.get("/hero", (req, res) => {
+  res.send("Hero to Heroku");
+});
 
 app.listen(port, () => {
   console.log("Listening to port", port);
